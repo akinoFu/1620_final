@@ -1,3 +1,49 @@
-div img {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+#wrapper {
+    width: 90%;
+    margin: 30px auto auto auto;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#thumb-bar {
+    margin: 5px 0;
+    display: flex;
+}
+.thumb-img {
     width: 20%;
+}
+.displayed-img {
+    width: 100%
+}
+#effect-items {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.effect-item {
+    margin: 0 10px;
+}
+input, button {
+    padding: 3px;
+    border: 1px solid dimgray;
+}
+
+@media screen and (max-width: 640px) {
+    #effect-items {
+        flex-direction: column;
+        text-align: center;
+    }
+    .effect-item {
+        margin: 1px 0 0 0;
+    }
 }

@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <h1>Welcome to our gallery</h1>
-    <p>Hover on any thumbnail to see it bigger</p>
-    <div id="thumb-bar"> </div>
-    <img class="displayed-img">
-    <label>What effect do you want to apply?</label>
-    <input id="effect" type="text">
-    <button>Submit</button>
+    <div id="wrapper">
+        <header>
+            <h1>Welcome to our gallery</h1>
+        </header>
+        <main>
+            <div id="image">
+                <p>Hover on any thumbnail to see it bigger</p>
+                <div id="thumb-bar">
+                    <img class="thumb-img" src="images/pic1.jpg">
+                    <img class="thumb-img" src="images/pic2.jpg">
+                    <img class="thumb-img" src="images/pic3.jpg">
+                    <img class="thumb-img" src="images/pic4.jpg">
+                    <img class="thumb-img" src="images/pic5.jpg">
+                </div>
+                <img class="displayed-img" src="images/pic1.jpg">
+            </div>
+            <div id="effect-items">
+                <div class="effect-item"><label>What effect do you want to apply?</label></div>
+                <div class="effect-item"><input id="effect" type="text"></div>
+                <div class="effect-item"><button>Submit</button></div>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>
