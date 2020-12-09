@@ -8,7 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 #wrapper {
-    width: 90%;
+    width: 640px;
     margin: 30px auto auto auto;
 }
 header {
@@ -39,6 +39,9 @@ input, button {
 }
 
 @media screen and (max-width: 640px) {
+    #wrapper {
+        width: 80%;
+    }
     #effect-items {
         flex-direction: column;
         text-align: center;
